@@ -1,27 +1,12 @@
 const fs = require('fs');
-const input = fs.readFileSync('예제.txt').toString().trim();
+const input = fs.readFileSync('예제.txt').toString().trim().split('\n');
 
-let layer = 1;
-let index = 0;
-let numerator = 0;
-let denominator = 0;
-let result = '';
+const k = 2; //층
+const n = 3; //호
+let sum = 0;
 
-while (Math.floor((layer * (layer + 1)) / 2) < input) layer++;
-index = Math.abs(Math.floor(((layer - 1) * layer) / 2) - input);
-
-if (layer % 2 === 0) {
-    numerator = index;
-
-    if (index === 1) denominator = layer;
-    else denominator = layer - index + 1;
-
-    console.log(`${numerator}/${denominator}`);
-} else {
-    denominator = index;
-
-    if (index === 1) numerator = layer;
-    else numerator = layer - index + 1;
-
-    console.log(`${numerator}/${denominator}`);
+for (let i = 0; i <= k - 1; i++) {
+    for (let j = 1; j <= n; j++) {
+        console.log(`층: ${i}, 호수: ${j}`);
+    }
 }
