@@ -1,12 +1,20 @@
 const fs = require('fs');
 const input = fs.readFileSync('예제.txt').toString().trim().split('\n');
 
-const k = 2; //층
-const n = 3; //호
-let sum = 0;
+const T = input.shift();
 
-for (let i = 0; i <= k - 1; i++) {
-    for (let j = 1; j <= n; j++) {
-        console.log(`층: ${i}, 호수: ${j}`);
+for (let x = 0; x < T; x++) {
+    const floor = input.shift();
+    let roomNo = input.shift();
+    const aptTable = [];
+
+    for (let y = 0; y <= floor; y++) {
+        aptTable.push([1]);
+        for (let z = 1; z < roomNo; z++) {
+            if (y === 0) aptTable[y].push(z + 1);
+            else aptTable[y].push(aptTable[y][z - 1] + aptTable[y - 1][z]);
+        }
     }
+    roomNo = +roomNo - 1;
+    console.log(aptTable[floor][roomNo]);
 }
