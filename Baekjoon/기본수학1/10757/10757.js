@@ -1,3 +1,9 @@
 const fs = require('fs');
-const [a, b, v] = fs.readFileSync('예제.txt').toString().trim().split(' ').map(Number);
-console.log(Math.ceil((v - b) / (a - b)));
+const [a, b] = fs
+    .readFileSync('예제.txt')
+    .toString()
+    .trim()
+    .split(' ')
+    .map((ele) => BigInt(ele));
+const ans = a + b;
+console.log(ans.toString());

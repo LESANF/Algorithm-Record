@@ -33,11 +33,25 @@
 ## 풀이
 
 ```js
+JS에서 Number는 한정된 숫자를 담을 수 있다.
 
+BigInt를 사용하여 큰수의 계산을 할 수 있음.
+
+출력시 숫자마지막에 'n'이 붙어서 나온다.
+
+이를 제거하려면 string형으로 형변환 해야함.
 ```
 
 ## 내 제출
 
 ```js
-
+const fs = require('fs');
+const [a, b] = fs
+    .readFileSync('예제.txt')
+    .toString()
+    .trim()
+    .split(' ')
+    .map((ele) => BigInt(ele));
+const ans = a + b;
+console.log(ans.toString());
 ```
