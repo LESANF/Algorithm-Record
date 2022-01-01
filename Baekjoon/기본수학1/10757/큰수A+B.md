@@ -55,3 +55,16 @@ const [a, b] = fs
 const ans = a + b;
 console.log(ans.toString());
 ```
+
+## 숏코딩 + 모범답안
+
+```js
+console.log(
+    (require('fs').readFileSync('/dev/stdin') + '')
+        .split(' ')
+        .map(BigInt)
+        .reduce((a, b) => a + b) + ''
+);
+
+형변환 할 때, 굳이 함수로 return시키지 않아도됨.
+```
