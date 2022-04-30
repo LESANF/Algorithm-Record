@@ -1,5 +1,9 @@
 {
-  "dependencies": {
-    "fs": "^0.0.1-security"
-  }
+    "scripts": {
+        "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/if문/2525/2525.js"
+    },
+    "dependencies": {
+        "fs": "^0.0.1-security",
+        "nodemon": "^2.0.16"
+    }
 }

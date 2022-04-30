@@ -1,19 +1,21 @@
 const fs = require('fs');
-const input = fs.readFileSync('예제.txt').toString().trim().split(' ');
+const input = fs.readFileSync('예제.txt').toString().trim().split('\n');
 
-let a = 0;
-let b = 0;
+let hour = +input[0].split(' ')[0];
+let minutes = +input[0].split(' ')[1];
+let spend = +input[1];
+let newMin = 0;
 
-a = parseInt(input[0]);
+if (minutes + spend >= 60) {
+    newMin = spend + minutes;
 
-if (90 <= a && a <= 100) {
-    console.log('A');
-} else if (80 <= a && a <= 89) {
-    console.log('B');
-} else if (70 <= a && a <= 79) {
-    console.log('C');
-} else if (60 <= a && a <= 69) {
-    console.log('D');
+    hour += newMin / 60;
+    if (hour >= 24) {
+        hour -= 24;
+    }
+    minutes = newMin % 60;
 } else {
-    console.log('F');
+    minutes += spend;
 }
+
+console.log(`${Math.floor(hour)} ${minutes}`);
