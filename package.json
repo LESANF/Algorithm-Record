@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/입출력과사칙연산/25083/25083.js"
+        "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/if문/2480/2480.js"
     },
     "dependencies": {
         "fs": "^0.0.1-security",
