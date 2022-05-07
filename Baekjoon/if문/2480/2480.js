@@ -4,10 +4,9 @@ const input = fs
     .toString()
     .trim()
     .split(' ')
-    .map((v) => +v);
+    .map((v) => +v)
+    .sort((a, b) => a - b);
 
-const diceNum1 = input[0];
-const diceNum2 = input[1];
-const diceNum3 = input[2];
-
-if (diceNum1 === diceNum2 && diceNum2 === diceNum3) console.log(10000 + diceNum1 * 1000);
+if (input[0] === input[1] && input[1] === input[2]) console.log(10000 + input[0] * 1000);
+else if (input[0] === input[1] || input[1] === input[2]) console.log(1000 + input[1] * 100);
+else console.log(input[2] * 100);
