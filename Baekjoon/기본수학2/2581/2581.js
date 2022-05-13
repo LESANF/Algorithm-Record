@@ -1,7 +1,5 @@
 const fs = require('fs');
-const input = fs.readFileSync('예제.txt').toString().trim().split('\n');
-
-const decimalAry = [];
+const input = fs.readFileSync('예제.txt').toString().trim().split(' ');
 
 for (let i = +input[0]; i <= +input[1]; i++) {
     if (i === 1) continue;
@@ -11,7 +9,7 @@ for (let i = +input[0]; i <= +input[1]; i++) {
         if (candidate % j === 0) cnt++;
     }
 
-    if (cnt === 0) decimalAry.push(i);
+    if (cnt === 0) console.log(candidate);
     cnt = 0;
 }
 
