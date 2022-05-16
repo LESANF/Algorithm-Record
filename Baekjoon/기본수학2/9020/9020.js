@@ -18,8 +18,20 @@ for (let i = 2; i <= 100; i++) {
 // 10000이하 소수개수 1229개, 소수는 true. 해당index가 수를 표현.
 
 for (let i = 0; i < input.length; i++) {
-    if (input[i] <= 4) continue; //4부터 돌아가야함.
+    if (input[i] <= 3) continue; //4부터 돌아가야함.
     const even = input[i];
     const cutPrimeAry = primeAry.slice(0, even + 1);
-    console.log(cutPrimeAry);
+    let ans = [];
+    let minCnt = 0;
+    for (let j = 2; j <= even; j++) {
+        if (cutPrimeAry[j] === true && cutPrimeAry[even - j] === true) {
+            if (even - j >= j) {
+                if (minCnt <= even - j - j) {
+                    ans = [j, even - j];
+                }
+            }
+        }
+    }
+    ans.sort((a, b) => a - b);
+    console.log(ans.join(' '));
 }
