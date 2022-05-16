@@ -17,8 +17,7 @@ for (let i = 2; i <= 100; i++) {
 }
 // 10000이하 소수개수 1229개, 소수는 true. 해당index가 수를 표현.
 
-for (let i = 0; i < input.length; i++) {
-    if (input[i] <= 3) continue; //4부터 돌아가야함.
+for (let i = 1; i <= input[0]; i++) {
     const even = input[i];
     const cutPrimeAry = primeAry.slice(0, even + 1);
     let ans = [];
