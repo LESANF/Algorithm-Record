@@ -9,5 +9,4 @@ for (let i = 0; i < testCase; i++) {
     const guest = +input[i].split(' ')[2];
 
     const roomState = Array.from(Array(height), () => Array(width).fill(false));
-    console.log(roomState);
 }
