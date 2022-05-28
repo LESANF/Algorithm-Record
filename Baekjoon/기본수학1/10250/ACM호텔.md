@@ -111,6 +111,6 @@ for (let i = 0; i < testCase; i++) {
 
     const roomNo = Math.ceil(guest / height);
     const floor = guest % height === 0 ? height : guest % height;
-    roomNo < 10 ? console.log(`${floor}0${roomNo}`) : console.log(`${floor}${roomNo}`);
+    console.log(roomNo < 10 ? `${floor}0${roomNo}` : `${floor}${roomNo}`);
 }
 ```
