@@ -55,7 +55,6 @@ ACM 호텔 매니저 지우는 손님이 도착하는 대로 빈 방을 배정�
 
 ```js
 계산으로 푸는방식도 있지만, 1차원적으로 접근하기위해 이중 for문을 사용해서 풀었다.
-
 ```
 
 ## 내 제출
@@ -82,5 +81,36 @@ for (let i = 0; i < testCase; i++) {
         }
         if (cnt === guest) break;
     }
+}
+```
+
+## BEST 풀이
+
+```js
+반복문이아닌 계산으로 간편하게 풀어짐.
+
+몇번째 N에 층수를 나눈다. 나머지가 층수가됨. 0이면 층수는 주어진 H그 자체임.
+
+몫이 호수가되는데 ceil로 올림처리를해야함. 10보다 작으면 0을 붙여서 출력해야함
+
+무조건 0을붙이면 111호 같은 호수를 출력못함
+
+호수가 1호부터 존재하기 때문에 원래 +1 처리를해야하나 ceil로 무조건 올려버리기때문에 +1하는 로직을 대체함.
+```
+
+## BEST 답안
+
+```js
+const fs = require('fs');
+const input = fs.readFileSync('예제.txt').toString().trim().split('\n');
+
+const testCase = input.shift();
+
+for (let i = 0; i < testCase; i++) {
+    const [height, width, guest] = input[i].split(' ').map(Number);
+
+    const roomNo = Math.ceil(guest / height);
+    const floor = guest % height === 0 ? height : guest % height;
+    roomNo < 10 ? console.log(`${floor}0${roomNo}`) : console.log(`${floor}${roomNo}`);
 }
 ```
