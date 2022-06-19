@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/재귀/2447/2447.js"
+        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/기본문제/세수중최솟값/index.js"
     },
     "dependencies": {
         "fs": "^0.0.1-security",
