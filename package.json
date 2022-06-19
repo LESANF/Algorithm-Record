@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/기본문제/연필개수/index.js"
+        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/기본문제/1부터N까지합출력/index.js"
     },
     "dependencies": {
         "fs": "^0.0.1-security",
