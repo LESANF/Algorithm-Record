@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/기본문제/일곱난쟁이/index.js"
+        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/기본문제/A를#으로/index.js"
     },
     "dependencies": {
         "fs": "^0.0.1-security",
