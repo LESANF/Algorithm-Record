@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/기본문제/대소문자변환/index.js"
+        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/기본문제/가장긴문자열/index.js"
     },
     "dependencies": {
         "fs": "^0.0.1-security",
