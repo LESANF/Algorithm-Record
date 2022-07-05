@@ -1,8 +1,5 @@
 const fs = require('fs');
-const input = fs.readFileSync('예제.txt').toString().trim().split('\n');
-
-const num = +input.shift();
-const wordAry = input;
+const input = fs.readFileSync('예제.txt').toString().trim();
 
 function solution(num, wordAry) {
     let ans,
