@@ -3,10 +3,10 @@ const input = fs.readFileSync('예제.txt').toString().trim();
 
 function solution(input) {
     let ans;
-    input = input.split('');
-    input.splice(0, 1);
-    input.splice(input.length - 1, 1);
-    ans = input.join('');
+    const mid = parseInt(input.length / 2);
+    console.log(mid);
+    if (input.length % 2 === 1) ans = input.substring(mid, mid + 1);
+    else ans = input.substring(mid - 1, mid + 1);
     return ans;
 }
 
