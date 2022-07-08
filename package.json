@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/1,2차원배열탐색/큰수출력하기/index.js"
+        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/1,2차원배열탐색/보이는학생/index.js"
     },
     "dependencies": {
         "fs": "^0.0.1-security",
