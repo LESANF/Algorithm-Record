@@ -5,11 +5,16 @@ const n = +input[0];
 const numAry = input[1].split(' ').map(Number);
 
 function solution(numAry) {
-    let ans = [numAry[0]];
+    let ans = [numAry[0]],
+        max = ans[0];
+
     for (let i = 1; i < n; i++) {
-        if (numAry[i] > numAry[i - 1]) ans.push(numAry[i]);
+        if (numAry[i] > max) {
+            max = numAry[i];
+            ans.push(numAry[i]);
+        }
     }
-    return ans.join(' ');
+    return ans.length;
 }
 
 console.log(solution(numAry));
