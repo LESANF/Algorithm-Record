@@ -5,9 +5,8 @@ const n = +input.shift();
 
 function solution(input) {
     let ans;
-    const prevArr = input.split('');
-    const newArr = prevArr.filter((v, i) => prevArr.indexOf(v) === i);
-    ans = newArr.join('');
+    const newArr = input.filter((v, i) => input.indexOf(v) === i);
+    ans = newArr.join('\n');
     return ans;
 }
 
