@@ -16,13 +16,20 @@ function solution(square) {
 
     for (let i = 0; i < square.length; i++) {
         for (let j = 0; j < square.length; j++) {
-            let flag = false;
+            let flag = true;
             for (let k = 0; k < 4; k++) {
                 let dx1 = i + dx[k];
                 let dy1 = j + dy[k];
-                console.log(dx1, dy1);
-                // if (square[dx1][dy1] > square[i][j]) break;
-                // else flag = true;
+                if (
+                    dx1 > -1 &&
+                    dy1 > -1 &&
+                    dx1 < square.length &&
+                    dy1 < square.length &&
+                    square[dx1][dy1] > square[i][j]
+                ) {
+                    flag = false;
+                    break;
+                }
             }
             if (flag) ans++;
         }
