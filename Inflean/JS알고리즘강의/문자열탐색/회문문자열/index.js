@@ -1,23 +1,23 @@
 const fs = require('fs');
-const input = fs.readFileSync('예제.txt').toString().trim().split('\n');
+const input = fs.readFileSync('예제.txt').toString().trim();
 
-const n = +input[0];
-const aInfo = input[1].split(' ').map(Number);
-const bInfo = input[2].split(' ').map(Number);
-
-function solution() {
-    let ans;
-
-    for (let i = 0; i < n; i++) {
-        if (aInfo[i] < bInfo[i] || (aInfo[i] === 3 && bInfo[i] === 1)) {
-            console.log('B');
-        } else if (aInfo[i] > bInfo[i] || (aInfo[i] === 1 && bInfo[i] === 3)) {
-            console.log('A');
-        } else {
-            console.log('D');
-        }
-    }
+function solution(input) {
+    let ans = 'YES';
+    const word = input.toLowerCase();
+    const wordR = word.split('').reverse().join('');
+    if (word !== wordR) return 'NO';
     return ans;
 }
 
-console.log(solution());
+console.log(solution(input));
+
+// function solution(input) {
+//     let ans = 'YES';
+//     const word = input.toLowerCase();
+//     for (let i = 0; i < Math.floor(word.length / 2); i++) {
+//         if (word[i] !== word[word.length - 1 - i]) return 'NO';
+//     }
+//     return ans;
+// }
+
+// console.log(solution(input));
