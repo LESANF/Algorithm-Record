@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/문자열탐색/회문문자열/index.js"
+        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/문자열탐색/유효한팰린드롬/index.js"
     },
     "dependencies": {
         "fs": "^0.0.1-security",
