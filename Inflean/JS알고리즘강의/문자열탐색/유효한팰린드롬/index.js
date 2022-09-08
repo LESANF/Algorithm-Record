@@ -1,21 +1,25 @@
 const fs = require('fs');
 const input = fs.readFileSync('예제.txt').toString().trim();
 
-function solution(input) {
-    let ans = 'YES';
+const regex = /^[a-z|A-Z]+$/;
 
-    return ans;
+function solution(input) {
+    let ans = 'YES',
+        filterWord = '';
+
+    for (let v of input) {
+        if (regex.test(v)) filterWord = filterWord + v;
+    }
+
+    filterWord = filterWord.toLocaleUpperCase();
+
+    console.log(Math.floor(filterWord.length / 2));
+    let filterReverse = filterWord.split('').reverse().join('').toLocaleUpperCase();
+
+    if (filterWord === filterReverse) return ans;
+    else return 'NO';
+
+    return filterWord;
 }
 
-console.log(input);
-
-// function solution(input) {
-//     let ans = 'YES';
-//     const word = input.toLowerCase();
-//     for (let i = 0; i < Math.floor(word.length / 2); i++) {
-//         if (word[i] !== word[word.length - 1 - i]) return 'NO';
-//     }
-//     return ans;
-// }
-
-// console.log(solution(input));
+console.log(solution(input));
