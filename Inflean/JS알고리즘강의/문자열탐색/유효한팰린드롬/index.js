@@ -12,14 +12,13 @@ function solution(input) {
     }
 
     filterWord = filterWord.toLocaleUpperCase();
+    const centerPos = Math.floor(filterWord.length / 2);
 
-    console.log(Math.floor(filterWord.length / 2));
-    let filterReverse = filterWord.split('').reverse().join('').toLocaleUpperCase();
+    for (let i = 0; i < centerPos; i++) {
+        if (filterWord[i] !== filterWord[filterWord.length - i - 1]) ans = 'NO';
+    }
 
-    if (filterWord === filterReverse) return ans;
-    else return 'NO';
-
-    return filterWord;
+    return ans;
 }
 
 console.log(solution(input));
