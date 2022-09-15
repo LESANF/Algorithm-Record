@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/문자열탐색/가장짧은문자거리/index.js"
+        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/문자열탐색/문자열압축/index.js"
     },
     "dependencies": {
         "fs": "^0.0.1-security",
