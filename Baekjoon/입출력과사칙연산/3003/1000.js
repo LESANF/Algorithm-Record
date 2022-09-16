@@ -1,10 +1,10 @@
 const fs = require('fs');
 const input = fs.readFileSync('예제.txt').toString().trim().split(' ');
 
-let a = 0;
-let b = 0;
+let ans = 0;
 
-a = Number(input[0]);
-b = Number(input[1]);
+for (let i = 0; i < input.length; i++) {
+    ans += Number(input[i]);
+}
 
-console.log(a - b);
+console.log(ans);
