@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/브루투포스/블랙잭/2798/2798.js"
+        "start": "nodemon /Users/lesa/Desktop/Algorithm/Inflean/JS알고리즘강의/완전탐색-블루투포스/뒤집은소수/index.js"
     },
     "dependencies": {
         "fs": "^0.0.1-security",
