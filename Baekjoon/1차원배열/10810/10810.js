@@ -1,6 +1,14 @@
 const fs = require('fs');
-const [cnt, num, findThis] = fs.readFileSync('예제.txt').toString().trim().split('\n');
+const [defaultValue, ...range] = fs.readFileSync('예제.txt').toString().trim().split('\n');
 
-const numAry = num.split(' ');
-const ans = numAry.filter((ele) => +ele === +findThis).length;
-console.log(ans);
+const [basket, cnt] = defaultValue.split(' ');
+const ans = Array(+basket).fill(0);
+
+for (let i = 0; i < cnt; i++) {
+    const [start, end, num] = range[i].split(' ');
+    for (let j = start - 1; j <= end - 1; j++) {
+        ans[j] = +num;
+    }
+}
+
+console.log(ans.join(' '));
