@@ -1,9 +1,9 @@
 {
-    "scripts": {
-        "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/1차원배열/10811/10811.js"
-    },
-    "dependencies": {
-        "fs": "^0.0.1-security",
-        "nodemon": "^2.0.16"
-    }
+  "scripts": {
+    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/재귀/2444/2444.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "nodemon": "^2.0.16"
+  }
 }
