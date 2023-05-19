@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/2차원배열/2738/2738.js"
+    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/2차원배열/2566/2566.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
