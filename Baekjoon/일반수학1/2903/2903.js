@@ -1,26 +1,7 @@
 const fs = require("fs");
-const change = fs.readFileSync("예제.txt").toString().trim().split("\n");
+const input = +fs.readFileSync("예제.txt").toString().trim();
 
-const T = +change.shift();
-let ans = [];
+let ans = 2;
+for (let i = 0; i < input; i++) ans = ans + (ans - 1);
 
-for (let i = 0; i < T; i++) {
-  let restChangeMoney = +change[i];
-  let divideUnit = [25, 10, 5, 1];
-
-  while (divideUnit.length > 0) {
-    const curDivideUnit = divideUnit.shift();
-
-    if (curDivideUnit > restChangeMoney) {
-      ans.push(0);
-      continue;
-    }
-
-    ans.push(Math.floor(restChangeMoney / curDivideUnit));
-    restChangeMoney = Math.floor(restChangeMoney % curDivideUnit);
-  }
-
-  console.log(ans.join(" "));
-  divideUnit = [25, 10, 5, 1];
-  ans = [];
-}
+console.log(Math.pow(ans, 2));
