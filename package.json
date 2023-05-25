@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/일반수학2/2501/2501.js"
+    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/일반수학2/9506/9506.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
