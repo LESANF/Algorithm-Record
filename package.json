@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/기하:직사각형과삼각형/1085/1085.js"
+    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/기하:직사각형과삼각형/15894/15894.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
