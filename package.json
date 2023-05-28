@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/시간복잡도/24264/24264.js"
+    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/시간복잡도/24265/24265.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
