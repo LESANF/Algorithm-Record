@@ -1,0 +1,9 @@
+const fs = require("fs");
+const input = fs.readFileSync("예제.txt").toString().trim();
+
+console.log(
+  input
+    .split("")
+    .sort((a, b) => b - a)
+    .join("")
+);
