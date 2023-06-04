@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/정렬/11651/11651.js"
+    "start": "nodemon /Users/lesa/Desktop/Algorithm/Baekjoon/정렬/1181/1181.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
