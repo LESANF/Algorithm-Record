@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon /Users/lesa/Desktop/mac/Algorithm/Baekjoon/집합과맵/10815/10815.js"
+    "start": "nodemon /Users/lesa/Desktop/mac/Algorithm/Baekjoon/집합과맵/7785/7785.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
