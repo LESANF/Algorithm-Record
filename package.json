@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon /Users/lesa/Desktop/mac/Algorithm/Baekjoon/스텍큐덱/28279/28279.js"
+    "start": "nodemon /Users/lesa/Desktop/mac/Algorithm/Baekjoon/약수와배수소수2/2485/2485.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
