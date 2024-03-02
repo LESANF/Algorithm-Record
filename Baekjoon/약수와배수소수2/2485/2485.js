@@ -12,7 +12,7 @@ const distance = [];
 for (let i = 0; i < trees.length - 1; i++)
   distance.push(trees[i + 1] - trees[i]);
 
-let gcd = 0;
+let gcd = distance[distance.length - 1];
 let getGCD = (num1, num2) => (num2 > 0 ? getGCD(num2, num1 % num2) : num1);
 
 for (let i = 0; i < distance.length; i++) {
