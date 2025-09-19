@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon Baekjoon/스텍큐덱/2346/2346.js"
+    "start": "nodemon Baekjoon/스텍큐덱/4949/4949.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
